@@ -12,7 +12,10 @@ module.exports = {
   overrides: [
     {
       files: [
-        'e2e/**/*.{test,spec}.{js,ts,jsx,tsx}'
+        'e2e/**/*.{test,spec}.{js,ts,jsx,tsx}',
+        // ESLint v9.0.0 CLI Flag Changes --ext
+        // https://eslint.org/docs/latest/use/configure/migration-guide#--ext
+        "**/*.{vue,js,jsx,cjs,mjs,ts,tsx,cts,mts}"
       ],
       'extends': [
         'plugin:playwright/recommended'
