@@ -8,6 +8,14 @@ bun i
 
 更改目录结构, eslint 升级 9.0.0 还需要调整
 
+bun add -D @tauri-apps/cli
+
+bun tauri init
+
+package.json add tauri script
+
+bun tauri dev
+
 ## log
 
 ```
@@ -35,5 +43,16 @@ Done. Now run:
   npm run format
   npm run dev
 
+
+```
+
+```
+$ bun tauri init
+✔ What is your app name? · template-tauri-vue-bun
+✔ What should the window title be? · template-tauri-vue-bun
+✔ Where are your web assets (HTML/CSS/JS) located, relative to the "<current dir>/src-tauri/tauri.conf.json" file that will be created? · ../dist
+✔ What is the url of your dev server? · http://localhost:5173
+✔ What is your frontend dev command? · bun run dev
+✔ What is your frontend build command? · bun run build
 
 ```
