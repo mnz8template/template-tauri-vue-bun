@@ -2,11 +2,11 @@
 
 bun create vue
 
-ncu -i
+ncu -i 更新版本 eslint 保持 8.x 版本
 
 bun i
 
-更改目录结构, eslint 升级 9.0.0 还需要调整
+更改目录结构
 
 bun add -D @tauri-apps/cli
 
@@ -15,6 +15,12 @@ bun tauri init
 package.json add tauri script
 
 bun tauri dev
+
+bun x playwright install
+
+bun run build
+
+bun run test:e2e
 
 ## log
 
